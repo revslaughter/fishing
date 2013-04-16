@@ -1,3 +1,7 @@
+#My last attempt to have "cast" as a definition within the primary code.  I simplified the list of fish for 
+#this one.  It wasn't working, though (it would print the line_cast choice, then the program would end instead
+#of going to the raw_input options . . . I'd like to have it loop back to the beginning if it gets the "float
+#stays still" option, which I don't actually have in here yet . . .  Not sure how to do that, though).
 lake_fish = ["Trout", "Old Boot"]
 
 river_fish = ["Trout", "Salmon"]
