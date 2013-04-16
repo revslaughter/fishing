@@ -1,3 +1,4 @@
+#These three lists are just fish found in those locales.
 lake_fish = ["Brown Trout", "Rainbow Trout", "Lake Trout", "Largemouth Bass", "Black Crappie", "Tench", "Common Carp", "Roach", "Common Bream", "Rudd",
 "Wels Catfish", "Blue Catfish", "Channel Catfish", "Zander", "European Perch"]
 
@@ -10,7 +11,7 @@ while menu_item !=("Q"):
     print "Where would you like to fish?  At the Lake, the River, or the Beach?"
     print "To quit, press Q."
     menu_item = raw_input("Pick an option: ")
-
+#Okay, so there's not much gameplay atm.  It just picks a random fish.  I'm working on adding some gameplay elements.
     if menu_item == ("Lake"):
         from random import choice
         print "You caught a ", choice(lake_fish), "!"
@@ -22,5 +23,5 @@ while menu_item !=("Q"):
     elif menu_item == ("Beach"):
         from random import choice
         print "You caught a ", choice(beach_fish), "!"
-     
+        
 print "Goodbye."
