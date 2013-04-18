@@ -26,20 +26,20 @@ while True: #makes an 'infinite loop' -- will continue until "broken".
 
     if theAction == bobs:
         option = raw_input("What do you do?  Reel it in, Pull back, Wait, or Drink a beer? ")
-        if raw_input == pull:
+        if option == pull:
             print "You hooked a fish!"
-        elif raw_input == beer:
+        elif option == beer:
             print "Well, you didn't catch a fish, but at least you're goofing off."
         else:
             print "Whatever it was, it seems to have gotten away."
     elif theAction == dunks:
         print "You've got a bite!"
         option = raw_input("What do you do?")
-        if raw_input == reel:
+        if option == reel:
             print "You got a fish, he's a fighter!"
-        elif raw_input == beer:
+        elif option == beer:
             print "Well, you didn't catch a fish, but at least you're goofing off."
-        elif raw_input != (reel, beer):
+        else:
             print "The fish got away . . ."
     while (theAction == still) and (5 != choice(range(10))):
         print ". . ."
