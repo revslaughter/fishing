@@ -19,7 +19,7 @@ beer = "Drink a beer"
 line_cast = [bobs, dunks, still]
 bob_choices = [reel, pull, beer]
 
-while choice(line_cast) == (bobs, dunks, still):
+while True: #makes an 'infinite loop' -- will continue until "broken".
     print "You cast your line into the water."
     print choice(line_cast)
 
@@ -43,3 +43,5 @@ while choice(line_cast) == (bobs, dunks, still):
             print "The fish got away . . ."
     while choice(line_cast) == still:
         print ". . ."
+    if input("Want to quit? y/n") == "y":
+        break #escapes ("breaks") the loop
