@@ -43,5 +43,5 @@ while True: #makes an 'infinite loop' -- will continue until "broken".
             print "The fish got away . . ."
     while choice(line_cast) == still:
         print ". . ."
-    if input("Want to quit? y/n") == "y":
+    if raw_input("Want to quit? y/n") == "y":
         break #escapes ("breaks") the loop
