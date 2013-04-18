@@ -8,6 +8,10 @@
 
 line_cast = ["The float bobs down slightly", "The float disappears under the water", "The float stays serenely still"]
 
+bobs = "The float bobs down slightly"
+dunks = "The float disappears under the water"
+still = "The float stays serenely still"
+
 print "You cast your line into the water."
 from random import choice
 print choice(line_cast)
