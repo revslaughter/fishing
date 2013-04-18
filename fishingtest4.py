@@ -6,17 +6,18 @@
 #otherwise the fish would get away.  At its most basic it'd a be a trial-and-error memory game, but that's
 #about the limit of my ability atm, though I have some thoughts for interesting ideas in the future.
 
+from random import choice
+
 bobs = "The float bobs down slightly"
 dunks = "The float disappears under the water"
 still = "The float stays serenely still"
 
 line_cast = [bobs, dunks, still]
 
-print "You cast your line into the water."
-from random import choice
-print choice(line_cast)
-
 while choice(line_cast) == (bobs, dunks, still):
+    print "You cast your line into the water."
+    print choice(line_cast)
+
     if choice(line_cast) == bobs:
         option = raw_input("What do you do?  Reel it in, Pull back, Wait, or Drink a beer? ")
         if raw_input == "Pull back":
