@@ -21,18 +21,18 @@ bob_choices = [reel, pull, beer]
 
 while True: #makes an 'infinite loop' -- will continue until "broken".
     print "You cast your line into the water."
-    print choice(line_cast)
+    theAction = choice(line_cast)
+    print theAction
 
-    if choice(line_cast) == bobs:
+    if theAction == bobs:
         option = raw_input("What do you do?  Reel it in, Pull back, Wait, or Drink a beer? ")
         if raw_input == pull:
             print "You hooked a fish!"
         elif raw_input == beer:
             print "Well, you didn't catch a fish, but at least you're goofing off."
-        elif raw_input != (pull, beer):
+        else:
             print "Whatever it was, it seems to have gotten away."
-
-    elif choice(line_cast) == dunks:
+    elif theAction == dunks:
         print "You've got a bite!"
         option = raw_input("What do you do?")
         if raw_input == reel:
@@ -41,7 +41,8 @@ while True: #makes an 'infinite loop' -- will continue until "broken".
             print "Well, you didn't catch a fish, but at least you're goofing off."
         elif raw_input != (reel, beer):
             print "The fish got away . . ."
-    while choice(line_cast) == still:
+    while (theAction == still) and (5 != choice(range(10))):
         print ". . ."
-    if raw_input("Want to quit? y/n") == "y":
-        break #escapes ("breaks") the loop
+    if 1 == choice(range(3)):
+        if raw_input("Want to quit? (y/n) ") == "y":
+            break #escapes ("breaks") the loop
