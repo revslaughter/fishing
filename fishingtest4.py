@@ -12,7 +12,12 @@ bobs = "The float bobs down slightly"
 dunks = "The float disappears under the water"
 still = "The float stays serenely still"
 
+reel = "Reel it in"
+pull = "Pull back"
+beer = "Drink a beer"
+
 line_cast = [bobs, dunks, still]
+bob_choices = [reel, pull, beer]
 
 while choice(line_cast) == (bobs, dunks, still):
     print "You cast your line into the water."
@@ -20,21 +25,21 @@ while choice(line_cast) == (bobs, dunks, still):
 
     if choice(line_cast) == bobs:
         option = raw_input("What do you do?  Reel it in, Pull back, Wait, or Drink a beer? ")
-        if raw_input == "Pull back":
+        if raw_input == pull:
             print "You hooked a fish!"
-        elif raw_input == "Drink a beer":
+        elif raw_input == beer:
             print "Well, you didn't catch a fish, but at least you're goofing off."
-        elif raw_input != ("Pull back", "Drink a beer"):
+        elif raw_input != (pull, beer):
             print "Whatever it was, it seems to have gotten away."
 
     elif choice(line_cast) == dunks:
         print "You've got a bite!"
         option = raw_input("What do you do?")
-        if raw_input == "Reel it in":
+        if raw_input == reel:
             print "You got a fish, he's a fighter!"
-        elif raw_input == "Drink a beer":
+        elif raw_input == beer:
             print "Well, you didn't catch a fish, but at least you're goofing off."
-        elif raw_input != ("Reel it in", "Drink a beer"):
+        elif raw_input != (reel, beer):
             print "The fish got away . . ."
     while choice(line_cast) == still:
         print ". . ."
