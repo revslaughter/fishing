@@ -1,0 +1,17 @@
+def footlbs(grains, velocity):
+    print "The bullet weighs %d grains." % grains
+    print "The bullet is moving at %d feet per second." % velocity
+# I can't figure out why this isn't working, but the last line here always returns zero.  With %r or %d it says it's
+#invalid or I get a syntax error.  I've also tried just putting in "grains" and "velocity" directly into the equation.
+#What am I doing wrong?  I thought I was correctly calling the raw_inputs from below, having specified they were integers
+    print "That is", %r * %r * %r / 450400, "foot-pounds of energy." % (grains, velocity, velocity)
+
+print "We are going to calculate bullet performance."
+
+print "How much does the bullet weigh in grains?"
+grains = int(raw_input("> "))
+
+print "How fast is the bullet moving in feet per second?"
+velocity = int(raw_input("> "))
+
+footlbs(grains, velocity)
