@@ -1,0 +1,176 @@
+from random import randint
+
+class Monster(object):
+
+    def __init__(self):
+        pass
+
+    def head(self):
+        choice = randint(1,8)
+
+        if choice == 1:
+            return "Faceless"
+
+        elif choice == 2:
+            return "Giant Eye"
+    
+        elif choice == 3:
+            return "Armored Head"
+        
+        elif choice == 4:
+            return "Acid Spitter"
+            
+        elif choice == 5:
+            return "Beaked"
+
+        elif choice == 6:
+            return "Smoking Stump"
+            
+        elif choice == 7:
+            return "Horned"
+
+        elif choice == 8:
+            return "Shrieking"
+
+    def body(self):
+        choice = randint(1,7)
+
+        if choice == 1:
+            return "Normal Body"
+
+        elif choice == 2:
+            return "Beefy Body"
+    
+        elif choice == 3:
+            return "Quilled Body"
+        
+        elif choice == 4:
+            return "Pimpled Body"
+            
+        elif choice == 5:
+            return "Explosive Body"
+
+        elif choice == 6:
+            return "Atomic Body"
+            
+        elif choice == 7:
+            return "Hive"
+
+    def arms(self):
+        choice = randint(1,6)
+
+        if choice == 1:
+            return "Normal Arms"
+
+        elif choice == 2:
+            return "Digging Claws"
+    
+        elif choice == 3:
+            return "Climbing Claws"
+        
+        elif choice == 4:
+            return "Wings"
+            
+        elif choice == 5:
+            return "Quill Thrower"
+
+        elif choice == 6:
+            return "Spine Whip in its Hands"
+
+    def legs(self):
+        choice = randint(1,6)
+
+        if choice == 1:
+            return "Normal Legs"
+
+        elif choice == 2:
+            return "Jumping Legs"
+    
+        elif choice == 3:
+            return "Stomping Legs"
+        
+        elif choice == 4:
+            return "Charging Legs"
+            
+        elif choice == 5:
+            return "Smoking Stump"
+
+        elif choice == 6:
+            return "Spider Legs"
+
+    def mutation(self):
+        choice = randint(1,11)
+
+        if choice == 1:
+            return "Normal"
+
+        elif choice == 2:
+            return "Armored"
+    
+        elif choice == 3:
+            return "Flaming"
+        
+        elif choice == 4:
+            return "Frozen"
+            
+        elif choice == 5:
+            return "Electrified"
+
+        elif choice == 6:
+            return "Rotting"
+            
+        elif choice == 7:
+            return "Toxic"
+
+        elif choice == 8:
+            return "Extra Fast"
+
+        elif choice == 9:
+            return "Extra Strong"
+        
+        elif choice == 10:
+            return "Giant"
+
+        elif choice == 11:
+            return "Mini"
+
+    def behaviour(self):
+        choice = randint(1,9)
+
+        if choice == 1:
+            return "Aggressively"
+
+        elif choice == 2:
+            return "Skirmisher"
+    
+        elif choice == 3:
+            return "Sneaky"
+        
+        elif choice == 4:
+            return "Vengeful"
+            
+        elif choice == 5:
+            return "Stalker"
+
+        elif choice == 6:
+            return "Spiteful"
+            
+        elif choice == 7:
+            return "Juicy"
+
+        elif choice == 8:
+            return "Opportunist"
+
+        elif choice == 9:
+            return "Neutral"
+
+    print head
+    print body
+    print arms
+    print legs
+    print mutation
+    print behaviour
+
+monster1 = Monster()
+
+monster1
