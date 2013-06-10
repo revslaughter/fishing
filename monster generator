@@ -11,7 +11,7 @@ class Monster(object):
         self.mArms = self.arms()
         self.mLegs = self.legs()
         self.mMuta = self.mutation()
-        self.mBehv = self.behavior()
+        self.mBehv = self.behaviour()
 
     def head(self):
         choice = randint(1,8)
