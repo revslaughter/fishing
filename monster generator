@@ -3,7 +3,15 @@ from random import randint
 class Monster(object):
 
     def __init__(self):
-        pass
+        """
+        Initialize values for this monster
+        """
+        self.mHead = self.head() #mHead -> Monster Head. You should make your methods become things like 'makeHead'
+        self.mBody = self.body() #mBody -> Monster Body, etc...
+        self.mArms = self.arms()
+        self.mLegs = self.legs()
+        self.mMuta = self.mutation()
+        self.mBehv = self.behavior()
 
     def head(self):
         choice = randint(1,8)
@@ -163,14 +171,22 @@ class Monster(object):
 
         elif choice == 9:
             return "Neutral"
-
-    print head
-    print body
-    print arms
-    print legs
-    print mutation
-    print behaviour
+    #Remove 'print' behavior from Class.
+    #If you want, you can do this in a __repr__ or __str__ method.
+    #I moved this stuff to the end.
+    #print head
+    #print body
+    #print arms
+    #print legs
+    #print mutation
+    #print behaviour
 
 monster1 = Monster()
 
-monster1
+#doing print stuff here instead:
+print monster1.mHead
+print monster1.mBody
+print monster1.mArms
+print monster1.mLegs
+print monster1.mMuta
+print monster1.mBehv
